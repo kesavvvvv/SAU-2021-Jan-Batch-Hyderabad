@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <style>
+            #progressbar{
+                position: absolute;
+                
+                height: 50px;
+                margin-top: 200px;
+                margin-left: 100px;
+                background-color: pink;
+                animation-name: moveprogress;
+                animation-duration: 10s;
+                width: 250px;
+
+            }
+            @keyframes moveprogress {
+                0%{
+                    
+                    width: 50px;
+                }
+                15%{
+                   
+                    width: 100px;
+                }
+                60%{
+                    
+                    width: 150px;
+                }
+                75%{
+                    
+                    width: 200px;
+                }
+                100%{
+                   
+                    width: 250px;
+                }
+                
+            }
+            #outline{
+                position: absolute;
+                width: 248px;
+                height: 48px;
+                margin-top: 200px;
+                margin-left: 100px;
+                border-width: 2px;
+                border-style: solid;
+                border-color: black;
+
+
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div id = "progressbar"></div>
+        <div id = "outline"></div>
+    </body>
+</html>
