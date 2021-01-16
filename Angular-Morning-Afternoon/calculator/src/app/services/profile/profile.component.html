@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+		 #para {
+        font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+        font-weight: normal;
+        font-size: 1.75em;
+        letter-spacing: .2em;
+        line-height: 1.1em;
+        margin:0px;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+      }
+      #container {
+        position: absolute; 
+        left: 50%; 
+        top: 50%; 
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        display: flex;
+  justify-content: center;
+        
+      }
+      #container label {
+        color: white;
+      }
+      #container button {
+        margin-right: 10px;
+      }
+      #container table {
+        border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      }
+      #container table tr {
+        background-color:grey;
+    color: #ffffff;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+      }
+      #container table tr:nth-of-type(even) {
+        background-color: darkgrey;
+      }
+      #container table tr:last-of-type {
+        border-bottom: 2px solid blue;
+      }
+      #container table th, #container table td {
+        padding: 12px 15px;
+      }
+
+    </style>
+  </head>
+  <body>
+	<p id = "para">Register!</p>
+    <div id = 'container'>
+      <div>
+      <form [formGroup]="profile" (ngSubmit)="onSubmit()">
+        <label>
+          First Name:
+          <input type="text" formControlName="firstName" required>
+        </label>
+        <br/>
+        <label>
+          Last Name:
+          <input type="text" formControlName="lastName">
+        </label>
+        <br/>
+        <label>
+          Email:
+          <input type="email" formControlName="email">
+        </label>
+        <br/>
+      </form>
+      <button  type="submit" [disabled]="!profile.valid" (click) = "onSubmit()">Submit</button>
+      <button style="float: right;" (click)="updateTable()">View Table</button>
+        </div>
+      <table style="width:100%; color: white;">
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Id</th>
+          </tr>
+          <tr *ngFor = "let row of rows">
+              <td style="text-align: center;" *ngFor = "let column of headers">
+                  {{row[column] | lowercase}}
+      
+              </td>      
+          </tr>
+      </table>
+    </div>
+  </body>
+</html>
+
+
+
+
+

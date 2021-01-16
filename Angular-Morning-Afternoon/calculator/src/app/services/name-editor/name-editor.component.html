@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <style>
+      #para {
+        font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+        font-weight: normal;
+        font-size: 1.75em;
+        letter-spacing: .2em;
+        line-height: 1.1em;
+        margin:0px;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+      }
+      #container {
+        position: absolute; 
+        left: 50%; 
+        top: 50%; 
+        transform: translate(-50%, -50%);
+        padding: 10px;
+      }
+      #container label {
+        color: white;
+        font-size: 30px;
+      }
+      #container input {
+       
+        font-size: 30px;
+      }
+      #container button {
+        margin-left: 10px;
+        font-size: 30px;
+      }
+      #p {
+        margin-top: 20px;
+      }
+      
+    </style>
+  </head>
+  <body >
+    <p id = "para">Calculator!</p>
+    <div id = "container">
+      <label>Number 1 </label>
+      <input type="number" [(ngModel)] = "num1"/><br><br>   
+      <label>Number 2 </label>
+      <input type="number"  [(ngModel)] = "num2"/><br><br>   
+      <label>Result </label>   
+      <input type="number" [(ngModel)] = "result"><br><br> 
+      <button (click) = "addition()">ADD</button>
+      <button (click) = "subtraction(num1, num2)">SUBTRACT</button>
+      <button type="button" id = "mul" (click) = "multiplication(num1, num2)">MULTIPLY</button>
+      <button type="button" id = "div" (click) = "division(num1, num2)">DIVIDE</button>
+    </div>
+    
+  </body>
+</html>
+
+
+
+
+
+
+
+
+<!-- <label>
+    Name:
+    <input type="text" [formControl]="name">
+  </label>
+
+  <button (click) = "updateName()">Update Name</button>
+  <p> Value: {{name.value}}</p> -->

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        #para {
+            font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+            font-weight: normal;
+            font-size: 1.75em;
+            letter-spacing: .2em;
+            line-height: 1.1em;
+            margin:0px;
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+        }
+        #container {
+            
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            
+        }
+      
+        #container table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            /* min-width: 400px; */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+        #container table tr {
+            background-color:grey;
+            color: black;
+            text-align: center;
+            border-bottom: 1px solid #dddddd;
+        }
+        #container table tr:nth-of-type(even) {
+            background-color: darkgrey;
+        }
+        #container table tr:last-of-type {
+            border-bottom: 2px solid blue;
+        }
+        #container table th, #container table td {
+            padding: 12px 15px;
+        }
+        </style>
+    </head>
+    <body>
+        <p id = "para">API Request!</p>
+        <button class= "btn" style="margin-left: 20px;" (click) = "getData()">Display</button>
+        <div id = 'container'>
+            <div>
+                <table >                  
+                    <tr>
+                        <th>User ID</th>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Body</th>
+                    </tr>    
+                    <tr *ngFor = "let row of data">
+                        <td>{{row.userId}}</td>
+                        <td>{{row.id}}</td>
+                        <td>{{row.title}}</td>
+                        <td>{{row.body}}</td>
+                      </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
+
