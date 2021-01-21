@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<subjects>
+    <subject id="1">
+        <name>Data Structures and Algorithm</name>
+        <prgLang>C</prgLang>
+        <status>Started</status>
+    </subject>
+    <subject id="2">
+        <name>Angular Crash Course</name>
+        <prgLang>Angular</prgLang>
+        <status>Submitted</status>
+    </subject>
+    <subject id="3">
+        <name>React Crash Course</name>
+        <prgLang>React</prgLang>
+        <status>Submitted</status>
+    </subject>
+    <subject id="4">
+        <name>AI Crash Course</name>
+        <prgLang>Python</prgLang>
+        <status>Started</status>
+    </subject>
+</subjects>
