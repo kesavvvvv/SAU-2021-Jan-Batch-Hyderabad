@@ -4,31 +4,31 @@ A) Please do install following code analyzers in your IDE and document the insta
 
  Install
 
-    ![1](files/sonar_install.png)
+![1](files/sonar_install.png)
 
  Report
 
-    ![2](files/sonar_report.png)
+![2](files/sonar_report.png)
 
  2) PMD (we haven't discussed about it but it's a similar tool) (https://pmd.github.io/)
 
  Install
 
-    ![3](files/pmd_install.png)
+![3](files/pmd_install.png)
 
  Report
 
-    ![4](files/pmd_report.png)
+![4](files/pmd_report.png)
 
  3) Checkstyle (https://maven.apache.org/plugins/maven-checkstyle-plugin/usage.html)
 
  Install
 
-    ![5](files/checkstyle_install.png)
+![5](files/checkstyle_install.png)
 
  Report
 
-    ![6](files/checkstyle_report.png)
+![6](files/checkstyle_report.png)
 
 B) Install the sonarqube server in your local machine and run sonarqube analysis against one of your projects.
 Choose any project of your choice which has at least 4 different classes.
@@ -37,27 +37,27 @@ Selected Project: REST WebServices
 
  1) Run Sonar Qube
 
-    ![7](files/sonar_qube_install.png)
+![7](files/sonar_qube_install.png)
 
  2) Login
 
-    ![8](files/sonar_qube_login.png)
+![8](files/sonar_qube_login.png)
 
  3) New Project
 
-    ![9](files/sonar_qube_new_project.png)
+![9](files/sonar_qube_new_project.png)
 
  4) Build in IntelliJ
 
-    ![10](files/sonar_qube_build.png)
+![10](files/sonar_qube_build.png)
  
  5) Report
 
-    ![11](files/sonar_qube_report.png)
+![11](files/sonar_qube_report.png)
 
  6) Code Smells   
 
-    ![12](files/sonar_qube_codesmells.png)
+![12](files/sonar_qube_codesmells.png)
 
 
 C) Document at least 5 points about following secure coding standards.
