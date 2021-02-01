@@ -1,0 +1,7 @@
+
+V	java:S125/"<This block of commented-out lines of code should be removed.(¶‹Ïúÿÿÿÿ
+i
+java:S1192"NDefine a constant instead of duplicating this literal "Not found id " 3 times.(Âı¼”ùÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(“İÎÜşÿÿÿÿ
+I
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ
